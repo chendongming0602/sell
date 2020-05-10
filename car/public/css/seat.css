@@ -1,0 +1,300 @@
+/*页头导航栏*/
+	header{
+		position:fixed;
+		top:0;left:0;
+		width:100%;
+		z-index:10;
+	}
+	body{/*背景颜色*/
+		background:#727b83;
+	}
+
+/*首图*/
+ .carousel>img{
+	width:100%;
+	height:100%;
+ }
+/*文件简介a*/
+ .intro_a{
+	width:100%;
+	margin-top:5%;
+ }
+ .intro_a>h1{
+	color:#fff;
+	text-align:center;
+	font-weight:600;
+ }
+ .intro_a>p{
+	width:60%;
+	margin:0 auto;
+	text-align:center;
+	font-size:18px;
+	margin-top:35px;
+	line-height:1.8;/*文字行距*/
+	color:#fff;
+ }
+/*展示图a*/
+ .show_a{
+	display:flex;
+	margin-top:100px;
+ }
+ .show_a>div{
+	width:100%;
+	position:relative;
+	text-align:center;
+	overflow:hidden;
+ }
+ .show_a>div>a>img{
+	width:100%;
+	height:100%;
+	transition:1s;
+ }
+
+ .show_a>div>div{
+ 	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.6);
+	position:absolute;
+	top:0;left:0;
+	
+ }
+ .show_a>div>div:hover{
+		display:none;
+ }
+	.show_a>div>a>img:hover{
+		transform:scale(1.1);
+	}
+
+/*overflow:hidden*/
+/*文件简介b*/
+ .intro_b{
+	margin-top:100px;
+	text-align:center;
+ }
+ .intro_b>span{
+	color:#fff;
+	font-size:20px;
+ }
+ .intro_b>h1{
+	color:#fff;
+	font-weight:500;
+	font-size:40px;
+	margin-top:16px;
+	margin-bottom:120px;
+ }
+/*展示图b*/
+	.show_b{
+		text-align:center;
+	}
+ .show_b>img{
+	width:85%;
+	border-radius:4px;
+ }
+
+/*展示图c*/
+	.show_c{
+		display:flex;
+		width:100%;
+		margin-top:120px;
+		
+	}
+	.show_c>div:nth-child(1){
+		width:50%;
+		margin-left:7.5%;
+		position:relative;
+  }
+	.show_c>div:nth-child(1)>img{
+		width:100%;
+		height:100%;
+		border-radius:4px;
+	}
+/*鼠标悬停的按钮*/
+	.show_c>div:nth-child(1)>a,.show_e>div:nth-child(2)>a,.show_h>div:first-child>div>a,.show_h>div:last-child>div>a{/*样式*/
+		padding:0 3%;
+		position:absolute;
+		top:0;
+		right:0;
+		bottom:0;
+		left:0;
+		margin:auto;
+		width:33%;
+		display:none;
+		font-size:20px;
+	}
+	.show_c>div:nth-child(1)>a,.show_e>div:nth-child(2)>a{/*单独修改c位置的宽度*/
+		width:25%;
+	}
+	.show_c>div:nth-child(1):hover>a,.show_e>div:nth-child(2):hover>a,.show_h>div:first-child>div:hover>a,.show_h>div:last-child>div:hover>a{
+		display:block;
+	}/*...............鼠标悬停a标签按钮*/
+ 
+
+ .show_c>div:nth-child(2){
+		width:30%;
+		margin-left:5%;
+		
+  }
+	
+	.show_c>div:nth-child(2)>h3{
+		color:#fff;
+		font-weight:600;
+		font-size:25px;
+		margin-top:30%;
+	}
+	.show_c>div:nth-child(2)>p{
+		color:#fff;
+		line-height:170%;
+		margin-top:10%;
+	}
+	
+/*展示图d*/
+	.show_d{
+		display:flex;
+		justify-content:space-around;
+		margin-top:200px;
+	}
+	.show_d>div:first-child{
+		background:url(../image/seat/show-5.gif) no-repeat;
+		height:658px;
+		width:49%;
+	}
+
+	.show_d>div:last-child{
+		background:url(../image/seat/show-6.gif) no-repeat;
+		height:658px;
+		width:51%;
+	}
+
+
+/*展示图e*/
+	.show_e{
+		display:flex;
+		width:100%;
+		margin-top:150px;
+		
+	}
+	.show_e>div:nth-child(2){
+		width:50%;
+		margin-left:8.5%;
+		border-radius:4px;
+		position:relative;
+ }
+	.show_e>div:nth-child(2)>img{
+		width:100%;
+		height:100%;
+		border-radius:4px;
+	}
+	
+ .show_e>div:nth-child(1){
+		width:30%;
+		margin-left:5%;
+		
+ }
+	
+	.show_e>div:nth-child(1)>h3{
+		color:#fff;
+		font-weight:600;
+		font-size:25px;
+		margin-top:30%;
+	}
+	.show_e>div:nth-child(1)>p{
+		color:#fff;
+		line-height:170%;
+		margin-top:10%;
+	}
+	
+
+/*展示图f*/
+	.show_f{
+		margin-top:150px;
+		
+	}
+	.show_f>img{
+		width:100%;
+		height:100%;
+		
+	}
+	
+/*文字c*/
+	.intro_c{
+		text-align:center;
+		margin-top:8%;
+	}
+	.intro_c>span{
+		color:#fff;
+		font-size:20px;
+	}
+	.intro_c>h1{
+		color:#fff;
+		font-weight:500;
+		margin-top:10px;
+	}
+	.intro_c>p{
+		color:#fff;
+		width:60%;
+		margin:0 auto;
+		line-height:35px;
+		margin-top:30px;
+		font-size:17px;
+	}
+/*展示图g*/
+	.show_g{
+		margin-top:50px;
+	}
+	.show_g>img{
+		width:100%;
+		height:100%;
+	}
+/*展示图h*/
+	.show_h{
+		display:flex;
+		justify-content:space-around;
+		margin-top:10%;
+	}
+	.show_h>div{
+		width:38%;
+	}
+	.show_h>div:first-child>h3,.show_h>div:last-child>h3{
+		color:#fff;
+		font-weight:500;
+		font-size:25px;
+		margin-top:10%;
+	}
+
+	.show_h>div:first-child>p,.show_h>div:last-child>p{
+		color:#fff;
+		line-height:33px;
+		margin-top:7%;
+		margin-bottom:10%;
+	}
+	.show_h>div:first-child>div{/*左边*/
+		position:relative;
+	}
+	.show_h>div:first-child>div>img,.show_h>div:last-child>div>img{/*左/右边图*/
+		width:100%;
+		height:100%;
+		border-radius:5px;
+	}
+
+	.show_h>div:last-child>div{
+		position:relative;
+	}
+
+	/*展示图i*/
+	.show_i{
+		margin-top:150px;
+	}
+	.show_i>img,.show_j>img{
+		width:100%;
+		height:100%;
+		transition:1s;
+	}
+/*展示图j*/	
+	.show_j{
+		margin-top:50px;
+		background:#000;
+		overflow:hidden;
+	}
+	.show_j>img:hover{
+		transform:scale(1.2);
+	}

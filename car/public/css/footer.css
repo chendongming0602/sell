@@ -1,0 +1,107 @@
+/*footer*/
+	.footer_bg{/*背景*/
+		width:100%;
+		position: relative;
+		overflow: hidden;
+	}
+	.footer_bg>img{/*背景图片*/
+		width: 100%;
+	}
+	.footer_bg>div{/*ul最外层的div*/
+		position: absolute;
+		top:0;left:0;
+		width:100%;
+	}
+	
+	.footer_bg:before{/*外边距溢出处理*/
+		content:"";
+		display:table;
+	}
+	.footer_logo{/*logo 图片 外的div*/
+		/* width: 100%; */
+		display:flex;
+		margin-top:3%;
+		justify-content:center;
+	}
+	.footer_logo>a>img{
+		width:120%;
+		display:block;
+		line-height:50px;
+	}
+	.footer_logo>a>img:hover{/*鼠标悬停 logo图标效果*/
+		animation:bounceOut 2s;
+	}
+	
+	.footer_hr_a{/*上面的分割线*/
+		
+			margin-top:4%;
+	}
+	.footer_hr_a>hr{
+	
+		width:60%;
+		margin:0 auto;
+		border:0.5px solid #666;/*改变分割线颜色*/
+		display:block;
+	}
+
+
+	.footer_carousel{/*	文字导航*/
+		width:60%;
+		display:flex;
+		margin:0 auto;
+		justify-content:space-between;
+		margin-top:3%;
+	}
+	.footer_carousel>ul{
+		text-align:center;
+		list-style:none;
+		overflow: hidden;	
+	}
+	.footer_carousel>ul>h5{
+		width:100%;
+		color:#fff;	
+		padding-bottom:5px;
+		white-space:nowrap;
+		overflow: hidden;
+		text-overflow:ellipsis;/*文字变为省略号*/
+	}
+
+	.footer_carousel>ul>li{
+		margin-top:5px;
+		overflow: hidden;
+	}
+
+	.footer_carousel>ul>li>a{
+		text-decoration:none;
+		color:#909090;
+		font-size:14px;
+		white-space:nowrap;
+		overflow: hidden;
+		text-overflow:ellipsis;
+	}
+
+	.footer_carousel>ul>li>a:hover{/*鼠标悬停下的导航字体效果*/
+		text-decoration:underline;
+		color:#ddd;
+	}
+
+
+	.footer_hr_b{/*下的分割线*/
+		width:100%;
+		
+		margin:auto;
+		margin-top:1.6%;
+	}
+	.footer_hr_b>hr{
+	
+		width:100%;
+		border:0.5px solid #666;/*改变分割线颜色*/
+	}
+	
+	.copyright{/*版权*/
+		color:#909090;
+		width:100%;
+		text-align:center;
+		font-size:14px;
+		margin-top:1%;
+	}

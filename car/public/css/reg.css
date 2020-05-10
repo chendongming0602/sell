@@ -1,0 +1,245 @@
+/*页头*/	
+	header{
+		position:fixed;
+		top:0;left:0;
+		width:100%;
+		z-index:10;
+	}
+/*背景*/
+	.bg{
+		display: flex;
+		height:100%;
+	}
+	.bg_left{
+		width:50%;
+		position: relative;
+		height:100%;
+	}
+	.bg_left>img{
+		width:100%;
+		display: block;
+		height: 100%;
+	}
+	.bg_left>p{
+		position: absolute;
+		top:20%;
+		font-size: 3rem;
+		overflow: hidden;
+		white-space:nowrap;
+		text-align: center;
+		width:0%;
+		color:#fff;
+		transition: 2s linear;
+	}
+	.bg_left>.bg_p{
+		width:100%;
+		transition: 2s linear;
+	}
+	.bg_right{
+		position: relative;
+		width:50%;
+		/* height: 100%; */
+	}
+	
+/*固定上边的外框*/
+	.reg_top,.login_top{
+		width: 70%;
+		/* border: 1px solid #f00; */
+		margin:0 auto;
+		margin-top:8%; 
+	}
+	.login_top{
+		margin-top:15%; 
+	}
+/*logo图*/
+	.logo{
+		text-align:center;
+		width:30%;
+		margin: 0 auto;
+		margin-top:2%;
+	}
+	.logo>img{
+		width:100%;
+		height:100%;
+	}
+/*固定登录/注册标题*/
+	.title,.title_reg{
+		width:80%;
+		display: flex;
+		margin: 0 auto;
+		justify-content: space-between;
+		margin-top:5%; 
+	}
+	.title>div,.title_reg>div{
+		width:48%;
+	}
+	.title>div>a,.title_reg>div>a{
+		text-decoration: none;
+	}
+	.title>div>a>p,.title_reg>div>a>p{
+		font-size:23px;
+		font-weight:500;
+		text-align: center;
+		white-space:nowrap;
+		overflow: hidden;
+		text-overflow:ellipsis;
+		
+	}
+	.title>div:first-child>a>p,.title_reg>div:last-child>a>p{
+		color:#1c69d4;
+	}
+	.title>div:last-child>a>p,.title_reg>div:first-child>a>p{
+		color:#a7a7a7;
+		
+	}
+	.title>div:first-child>hr,.title_reg>div:last-child>hr{
+		border-top:3px solid #1c69d4;
+		margin-top:3%; 
+		
+	}
+	.title>div:last-child>hr,.title_reg>div:first-child>hr{
+		border-top:3px solid  #a7a7a7;
+		margin-top:3%;
+	}
+
+	.zong{
+		width:80%;
+		margin: 0 auto;
+		margin-top:8%;
+		position:relative;
+		
+	}
+
+	/*注册输入框*/
+	.name>input,.pwd_1>input,.pwd_2>input,.phone>input,.ver>input{/*输入框*/
+		width:100%;
+		height:35px;
+		border: none;
+		outline:0;
+		border-bottom: 1px solid #757575;
+		padding-left:3%; 
+		font-size:17px; 
+		box-sizing: border-box;
+		
+	}
+	.ver>input{/*设置短信输入框背景*/
+		background: #fff;
+	}
+	.name,.pwd_1,.pwd_2,.phone,.ver{/*输入框 的外div*/
+		position:relative;
+		height:36px;
+		width:100%;
+		margin-top:35px; 
+	}
+	.phone{
+		margin-top:23px; 
+	}
+	.la_name,.la_pwd,.la_pwd_2,.la_phone,.la_ver{/*占位符  的文字*/
+		position:absolute;
+		top:18%;left:3%;
+		/*-58%*/
+		color:#888;
+		transition: .2s linear;
+		cursor:text;
+	}
+
+	.label_shang{/*jq操作*/
+		top:-62%;
+		color:#1c69d4;
+	}
+
+
+	.sex{/*性别*/
+		margin-top:23px;
+	}
+	.wman{
+		margin-left: 10%;
+	} 
+	.sex>label,.pdu>label,.ver>button,.reg_btn{/*鼠标光标*/
+		cursor:pointer;
+	}
+	.ver>button{/*短信按钮*/
+		width:25%;
+		height:100%;
+		color:#b1b1b1;
+		box-shadow:0 1px 4px 0 rgba(0,0,0,.29);
+		border:none;
+		outline: 0;
+		font-size:14px;
+		font-weight: 600;
+		position:absolute;
+		bottom:20%;right:0%;
+		border-radius: 3px;
+	}
+	.pdu{/*协议*/
+		margin-top:2%; 
+	}
+	.pdu a{
+		text-decoration: none;
+	}
+	.reg_btn{/*注册按钮*/
+		width:100%;
+		height:50px;
+		margin-top:8%;
+		background: #0653b6;
+		border:none;
+		font-size:20px; 
+		color:#fff;
+		border-radius: 3px;
+	}
+	.reg>p{/*提示文字*/
+		margin-top:1%; 
+		font-size:0.8rem;
+		padding-left:3%;
+		display: none;  
+	}
+	
+
+
+/*登录的输入框*/
+
+	.login{
+		width:100%;
+		margin: 0 auto;
+		
+	}
+	.name_2,.pwd_3{/*输入框 的外div*/
+		position:relative;
+		height:36px;
+		width:100%;
+		margin-top:35px;
+	}
+	
+	.name_2>input,.pwd_3>input{/*输入框*/
+		width:100%;
+		height:35px;
+		border: none;
+		outline:0;
+		border-bottom: 1px solid #757575;
+		padding-left:3%; 
+		font-size:17px; 
+		box-sizing: border-box;
+	}
+
+	.jizhu{
+		margin-top:2%;	 
+	}
+	.jizhu::after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	.jizhu>div:first-child{
+		float: left;	
+	}
+	.jizhu>div:last-child{
+		float: right;
+	}
+	.jizhu>div:last-child>a{
+		text-decoration: none;
+		color:#337ab7;
+	}
+	.jizhu>div>label{
+		cursor:pointer;
+	}
+	

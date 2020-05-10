@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+  <head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<link rel="stylesheet" href="css/reg.css">
+		<link rel="stylesheet" href="css/comm.css">
+		<!-- <link rel="stylesheet" href="css/head.css"> -->
+  </head>
+  <body>
+		<header id="header"><!--页头-->
+			
+		</header>
+	<div class="bg"><!--背景-->
+		<div class="bg_left">
+			<img src="image/reg/bg.png" alt="">
+			<p>用 户 注 册</p>
+		</div>
+
+		
+		<div class="bg_right"><!--标题-->
+			<div class="reg_top">
+				<div class="logo">
+					<img src="image/reg/logo.png" alt="">
+				</div>
+				<div class="title_reg">
+					<div>
+						<a href="login.html">
+							<p data-title="title_1">登 录 账 号</p>
+						</a>
+						<hr>
+					</div>
+					<div >
+						<a href="reg.html">
+							<p data-title="title_2">注 册 账 号</p>
+						</a>
+						<hr>
+					</div>
+				</div>
+				
+				<!--注册的输入框-->
+				<div  class="zong" ><!--输入框-->
+					<div data-reg="reg" class="reg">
+						<div class="name">
+							<input type="text" id="uname" data-text="text">
+							<label class="la_name" for="uname">用户名</label>
+						</div>
+						<p>请输入4~12位不包含空格、特殊符号的用户名</p>
+						
+						<div class="pwd_1">
+							<input type="password" id="upwd" data-text="text">
+							<label class="la_pwd" for="upwd">密码</label>
+						</div>
+						<p>请输入6~16位，可包含!@#$%^&*?.特殊字符的密码</p>
+						<div class="pwd_2">
+							<input type="password" id="upwd_2" data-text="text">
+							<label class="la_pwd_2" for="upwd_2">确认密码</label>
+						</div>
+						<p>请确认密码一致</p>
+						<div class="sex">
+							<input type="radio" name="sex" id="man" value=1 checked>
+							<label  for="man"> 男</label>
+							<input type="radio" name="sex" id="wman" class="wman" value=0>
+							<label  for="wman"> 女</label>
+						</div>
+						
+						<div class="phone">
+							<input type="text" id="phone" class=" inp_phone" data-text="text">
+							<label class="la_phone" for="phone">手机号码</label>
+						</div>
+						<p>请输入一个有效的手机号码</p>
+						<div class="ver">
+							<input type="text" id="ver" data-text="text"  disabled>
+							<label class="la_ver" for="ver">短信验证码</label>
+							<button  id="note" disabled>发送验证码</button>
+						</div>
+						<p>请输入正确验证码</p>
+						<div class="pdu">
+							<input type="checkbox" id="pdu" checked>
+							<label for="pdu">
+								<span>我同意</span>
+								<a href="#">《用户注册协议》</a>
+							</label>
+						</div>
+
+						<button class="reg_btn" id="reg_button">注 册</button>
+					</div>
+				
+				</div>
+
+			</div>
+		</div>
+		
+	</div>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/reg.js"></script>
+	<script src="js/header.js"></script>
+  </body>
+</html> 
